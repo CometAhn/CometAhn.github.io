@@ -328,7 +328,7 @@ public class URLShorterController {
 ```
 
 
-- ##### index.jsp
+- ##### control.jsp
 
 ```html
 <%
