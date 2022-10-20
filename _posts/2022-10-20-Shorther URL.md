@@ -3,7 +3,7 @@ layout: post
 title: URL Shorter Project
 subtitle: URL Shorter Project
 categories: portfolio
-tags: [URL Shorter], [portfolio], [JAVA]
+tags: [URL Shorter, portfolio, JAVA]
 ---
 
 # URL Shorter Project
