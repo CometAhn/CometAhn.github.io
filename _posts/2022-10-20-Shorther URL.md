@@ -17,7 +17,7 @@ php 출처 : [PHP) 단축 URL 서비스 구축하기](https://hi098123.tistory.c
 
 
 #### 코드
-- #### URL Entity
+- ##### URL Entity
 
 ```java
 package shorter.Entity;
@@ -45,7 +45,7 @@ public class Url {
 }
 ```
 
-- #### Shorter API
+- ##### Shorter API
 
 ```java
 package shorter.DAO;
@@ -76,7 +76,7 @@ public class Shorter {
 }
 ```
 
-- #### Controller
+- ##### Controller
 
 ```java
 package shorter;
@@ -192,7 +192,7 @@ public class URLShorterController {
 }
 ```
 
-- #### index.jsp
+- ##### index.jsp
 
 ```html
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -328,7 +328,7 @@ public class URLShorterController {
 ```
 
 
-- #### control.jsp
+- ##### control.jsp
 
 ```html
 <%
