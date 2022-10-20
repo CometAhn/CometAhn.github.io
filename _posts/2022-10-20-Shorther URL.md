@@ -20,6 +20,7 @@ php 출처 : [PHP) 단축 URL 서비스 구축하기](https://hi098123.tistory.c
 - ##### URL Entity
 
 ```java
+
 package shorter.Entity;
 
 import lombok.AllArgsConstructor;
@@ -49,6 +50,7 @@ public class Url {
 - ##### Shorter API
 
 ```java
+
 package shorter.DAO;
 
 import org.springframework.stereotype.Component;
@@ -77,10 +79,10 @@ public class Shorter {
 }
 ```
 
-
 - ##### Controller
 
 ```java
+
 package shorter;
 
 import shorter.DAO.*;
@@ -192,11 +194,13 @@ public class URLShorterController {
 		return "/Control";
 	}
 }
+
 ```
 
 - ##### index.jsp
 
 ```html
+
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
@@ -327,16 +331,19 @@ public class URLShorterController {
     </center>
 </body>
 </html>
+
 ```
 
 
 - ##### index.jsp
 
 ```html
+
 <%
     String addr = (String) request.getAttribute("addr");
     response.sendRedirect(addr);
 %>
+
 ```
 
 
