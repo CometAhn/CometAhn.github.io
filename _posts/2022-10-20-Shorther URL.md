@@ -44,7 +44,6 @@ public class Url {
 	private String timestampt;
 	private String lastUsed;
 }
-
 ```
 
 - ##### Shorter API
@@ -194,7 +193,6 @@ public class URLShorterController {
 		return "/Control";
 	}
 }
-
 ```
 
 - ##### index.jsp
@@ -331,7 +329,6 @@ public class URLShorterController {
     </center>
 </body>
 </html>
-
 ```
 
 
@@ -343,7 +340,6 @@ public class URLShorterController {
     String addr = (String) request.getAttribute("addr");
     response.sendRedirect(addr);
 %>
-
 ```
 
 
