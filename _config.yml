@@ -40,15 +40,13 @@ author: CometAhn
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Unpublished Work (cleft) 2017-{currentYear} {author}"
+copyright: "Comet's Blog (cleft) 2022-{currentYear} {author}"
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  공부 정리용 블로그입니다.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://comet.today"
+url: "https://cometahn.github.io"
 favicon: "" # the favicon for your site
 
 # Yat date format
@@ -63,10 +61,10 @@ yat:
 # header_transparent: true
 
 # If you want to change the content width, you can set to another value
-content_width: "1140px"
+content_width: "1040px"
 
 # Google analytics
-# google_analytics: [G-1N3FJ1ETYL]
+#google_analytics: [4138003962]
 
 # If you want to generate website sitemap, you can set true
 # sitemap: false
@@ -210,6 +208,9 @@ content_width: "1140px"
 markdown: kramdown
 kmarkdown:
   input: GFM
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
 plugins:
   - jekyll-feed
