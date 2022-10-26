@@ -60,16 +60,16 @@ yat:
 # debug: false
 
 # If you don't want transparent header, you can set false
-header_transparent: true
+# header_transparent: true
 
 # If you want to change the content width, you can set to another value
-content_width: "1024px"
+# content_width: "1024px"
 
 # Google analytics
-google_analytics: [G-1N3FJ1ETYL]
+# google_analytics: [G-1N3FJ1ETYL]
 
 # If you want to generate website sitemap, you can set true
-sitemap: true
+# sitemap: false
 
 # If you want to change site language, you can set lang option
 # lang: "en"  # default lang is en
@@ -103,11 +103,11 @@ sitemap: true
 
 # You can choose a theme color
 # Default theme colors as below:
-coolblack: #090a0b
-spacegrey: #353535
-snowwhite: #ffffff
+# coolblack: #090a0b
+# spacegrey: #353535
+# snowwhite: #ffffff
 #
-theme_color: snowwhite
+# theme_color: snowwhite
 #
 # Custom color as below:
 # theme_color: "#882250"
@@ -134,7 +134,7 @@ theme_color: snowwhite
 # it will be always kept on every visit (i.e. no matter
 # the browser is closed or not)
 #
-night_mode: "auto"
+# night_mode: "auto"
 
 # Code badge setting
 # You can enable or disable the code badge and so on
