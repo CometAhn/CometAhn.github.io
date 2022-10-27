@@ -21,6 +21,10 @@ html {
           transition: 0.1s color;
         }
 
+        .site-favicon {
+          filter: opacity(0.5) drop-shadow(0 0 0 white);
+        }
+        
         @include media-query($on-laptop) {
           .page-link {
             color: $header-text-color;
