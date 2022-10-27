@@ -1,11 +1,15 @@
 /**
  * Animation for transparent header
  */
-html {
+ html {
   &[data-header-transparent] {
     header.site-header {
       position: fixed;
     }
+  }
+
+  .site-favicon {
+    filter: opacity(0.5) drop-shadow(0 0 0 black);
   }
 
   &[data-scroll-status='top'] {
@@ -16,7 +20,7 @@ html {
       transition: 0.1s height,background-color,box-shadow;
 
       &.site-header {
-        .site-brand-inner, .page-link {
+        .site-brand-inner, .page-link,  {
           color: #fff;
           transition: 0.1s color;
         }
@@ -24,7 +28,7 @@ html {
         .site-favicon {
           filter: opacity(0.5) drop-shadow(0 0 0 white);
         }
-        
+
         @include media-query($on-laptop) {
           .page-link {
             color: $header-text-color;
