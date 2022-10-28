@@ -1,9 +1,22 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
   margin: 0;
   padding: 0;
 }
@@ -15,10 +28,11 @@ dl, dd, ol, ul, figure {
   font-style: normal;
 }
 
+
 /**
- * Basic styling
- */
- 
+  * Basic styling
+  */
+
 body {
   font-family: Pretendard-Regular;
   font-weight: $base-font-weight;
@@ -29,9 +43,9 @@ body {
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
-     -moz-font-feature-settings: "kern" 1;
-       -o-font-feature-settings: "kern" 1;
-          font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
   font-kerning: normal;
   display: flex;
   min-height: 100vh;
@@ -41,11 +55,21 @@ body {
 
 
 /**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+  * Set `margin-bottom` to maintain vertical rhythm
+  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
 }
@@ -53,17 +77,18 @@ ul, ol, dl, figure,
 
 
 /**
- * `main` element
- */
+  * `main` element
+  */
 main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  display: block;
+  /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
 
 
 /**
- * Images
- */
+  * Images
+  */
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -72,9 +97,9 @@ img {
 
 
 /**
- * Figures
- */
-figure > img {
+  * Figures
+  */
+figure>img {
   display: block;
 }
 
@@ -85,15 +110,17 @@ figcaption {
 
 
 /**
- * Lists
- */
-ul, ol {
+  * Lists
+  */
+ul,
+ol {
   margin-left: $spacing-unit;
 }
 
 li {
-  > ul,
-  > ol {
+
+  >ul,
+  >ol {
     margin-bottom: 0;
   }
 }
@@ -101,15 +128,20 @@ li {
 
 
 /**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
+  * Headings
+  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: $base-font-weight * 1.5;
 }
 
 /**
- * Links
- */
+  * Links
+  */
 a {
   color: $brand-color;
   text-decoration: none;
@@ -128,8 +160,8 @@ a {
 }
 
 /**
- * Blockquotes
- */
+  * Blockquotes
+  */
 blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
@@ -143,18 +175,24 @@ blockquote {
   }
 }
 
+code {
 
+  max-height: 600px;
+  overflow: auto !important;
+}
 
 /**
- * Code formatting
- */
+  * Code formatting
+  */
 pre,
 code {
   @include relative-font-size(0.9375);
-  color: $text-color;
+
+  /* 코드 블록 */
+  /*color: $text-color;*/
 }
 
-*:not(pre) > code {
+*:not(pre)>code {
   padding: 3px 6px;
   border-radius: 3px;
   background-color: #eee;
@@ -164,19 +202,21 @@ code {
 pre {
   overflow-x: auto;
   position: relative;
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
 
-  > code {
+  >code {
     display: inline-block;
-    padding: 20px!important;
+    padding: 20px !important;
     background-color: transparent;
     border: 0;
   }
 
-  table, pre {
+  table,
+  pre {
     margin-bottom: 0;
 
-    .gutter, .code {
+    .gutter,
+    .code {
       padding: 6px;
       border: none;
     }
@@ -186,8 +226,8 @@ pre {
 
 
 /**
- * Wrapper
- */
+  * Wrapper
+  */
 .wrapper {
   max-width: $content-width;
   margin: auto;
@@ -199,19 +239,41 @@ pre {
 
 
 /**
- * Clearfix
- */
+  * Clearfix
+  */
 %clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
+/**
+  * Scrollbar
+  */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 /**
- * Tables
- */
-table {
+  * Tables
+  */
+.hljs-ln-n {
+  margin-right: 20px;
+}
+
+table:not(.hljs-ln) {
   display: block;
   margin-bottom: $spacing-unit;
   width: 100%;
@@ -226,7 +288,8 @@ table {
     }
   }
 
-  th, td {
+  th,
+  td {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
   }
 
@@ -242,34 +305,38 @@ table {
 }
 
 /**
- * Flex layout
- */
+  * Flex layout
+  */
 %flex {
   display: flex;
 }
 
 %flex-1 {
   flex: 1;
-  min-width: 0; /* <-- fix flexbox width with pre tags  */
+  min-width: 0;
+  /* <-- fix flexbox width with pre tags  */
 }
 
 /**
- * Flex sticky
- */
+  * Flex sticky
+  */
 @mixin flex-sticky($top) {
   position: sticky;
-  position: -moz-sticky; /* <-- fix sticky compatibility issue */
+  position: -moz-sticky;
+  /* <-- fix sticky compatibility issue */
   position: -ms-sticky;
   position: -o-sticky;
   position: -webkit-sticky;
-  align-self: flex-start; /* <-- fix the sticky not work issue */
-  transform: scale(0.9999); /* <-- fix the sticky x overflow issue */
+  align-self: flex-start;
+  /* <-- fix the sticky not work issue */
+  transform: scale(0.9999);
+  /* <-- fix the sticky x overflow issue */
   top: $top;
 }
 
 /**
- * Vertical center
- */
+  * Vertical center
+  */
 @mixin vertical-center($position) {
   position: $position;
   top: 50%;
@@ -277,8 +344,8 @@ table {
 }
 
 /**
- * Horizontal center
- */
+  * Horizontal center
+  */
 @mixin horizontal-center($position) {
   position: $position;
   left: 50%;
@@ -286,8 +353,8 @@ table {
 }
 
 /**
- * Center background image
- */
+  * Center background image
+  */
 @mixin center-image {
   height: 100%;
   max-width: 1000%;
@@ -296,3 +363,25 @@ table {
   overflow: hidden;
 }
 
+/**
+  * Loading
+  */
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  display: block;
+  opacity: 0.7;
+  background-color: #fff;
+  z-index: 99;
+  text-align: center;
+}
+
+#loading-image {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  z-index: 100;
+}
