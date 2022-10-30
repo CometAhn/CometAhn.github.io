@@ -389,9 +389,9 @@ table:not(.hljs-ln) {
 @media (max-width: 767px) {
   #loading-image {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    transform: translate(-40%, -40%);
+    transform: translate(-40%, -30%);
     z-index: 100;
   }
 }
