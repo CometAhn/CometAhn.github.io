@@ -385,3 +385,13 @@ table:not(.hljs-ln) {
   left: 45%;
   z-index: 100;
 }
+
+@media (max-width: 767px) {
+  #loading-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+    z-index: 100;
+  }
+}
