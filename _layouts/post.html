@@ -25,6 +25,17 @@ sidebar:
 
     {%- include views/article.html -%}
 
+    <hr style="border: none;border-bottom: 1px solid #ebebeb;">
+
+    <!-- comet : add comments -->
+    <script src="https://utteranc.es/client.js"
+        repo="cometahn/CometAhn.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script>
+
     {%- assign result = hidden | where_exp: "item", "item == 'navigator'" -%}
     {%- if result.size == 0 -%}
     <div class="post-nav">
@@ -42,15 +53,6 @@ sidebar:
       {%- endif -%}
     </div>
     {%- endif -%}
-
-    <!-- comet : add comments -->
-    <script src="https://utteranc.es/client.js"
-        repo="cometahn/CometAhn.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-    </script>    
 
     {%- assign result = hidden | where_exp: "item", "item == 'related_posts'" -%}
     {%- if result.size == 0 -%}
