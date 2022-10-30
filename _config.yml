@@ -230,4 +230,4 @@ tipue_search:
         tags: []
 
 # comet : paging
-paginate: 5
+paginate: 10

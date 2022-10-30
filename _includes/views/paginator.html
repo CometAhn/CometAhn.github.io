@@ -12,7 +12,46 @@
     {% endif %}
     </span>
 
-    <span class="indicator"> {{ paginator.page }}/{{ paginator.total_pages }}</span>
+    {% if include.paginator %}
+  {% assign paginator = include.paginator %}
+{% endif %}
+    
+{% if paginator.posts.size > 0 %}
+  <div class="paginator">
+    <span class="previous">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}">Prev</a>
+    {% else %}
+      <span>Prev</span>
+    {% endif %}
+    </span>
+
+    <!-- comet : page numering -->
+    <span class="indicator">
+      {% if paginator.page == 1 %}
+      <span class="active">1</span>
+      {% else %}
+      <a href="/">1</a>
+      {% endif %}
+      {% for count in (2..paginator.total_pages) %}
+        {% if count == paginator.page %}
+        <span class="active">{{ count }}</span>
+        {% else %}
+        <a href="/page{{ count }}">{{ count }}</a>
+        {% endif %}
+      {% endfor %}
+    </span>
+
+    <span class="next">
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}">Next</a>
+    {% else %}
+      <span>Next</span>
+    {% endif %}
+    </span>
+  </div>
+{% endif %}
+
 
     <span class="next">
     {% if paginator.next_page %}
