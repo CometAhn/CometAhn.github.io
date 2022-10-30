@@ -392,9 +392,14 @@
     .previous span, .next span {
       color: #b3b3b3;
     }
-
+/*
     .indicator {
       padding: 0 15px;
+    }
+*/
+    .active {
+      padding : 0 3px;
+      margin: 0 2px;
     }
   }
 }
