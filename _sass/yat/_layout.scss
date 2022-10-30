@@ -29,6 +29,21 @@
           filter: opacity(0.5) drop-shadow(0 0 0 white);
         }
 
+        /* comet : add search */
+        #tipue_search_input {
+          color: white;
+          max-width: 100px;
+          padding: 3px;
+          margin: 0 20px 0 0;
+          border: 1px solid #e3e3e3;
+          border-radius: 0;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          box-shadow: none;
+          outline: 0;
+          background-color: rgba(255, 255, 255, 0.3);
+        }
+
         @include media-query($on-laptop) {
           .page-link {
             color: $header-text-color;

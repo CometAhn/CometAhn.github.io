@@ -218,3 +218,13 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-spaceship
+  
+# comet : add search
+tipue_search:
+    include:
+        pages: false
+        collections: []
+    exclude:
+        files: [search.html, index.html, tags.html]
+        categories: []
+        tags: []
