@@ -1,29 +1,38 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "ko" }}">
+<html lang="{{ page.lang | default: site.lang | default: " ko" }}">
 
-  {%- include head.html -%}
+{%- include head.html -%}
 
-  <body>
+<body>
 
-    <div id="loading"><img id="loading-image" src="/img/loading.gif" alt="Loading..." /></div>
+  <div id="loading">
+    <img id="loading-image" src="/img/loading.gif" alt="Loading..." />
+  </div>
 
-    {%- include views/header.html -%}
+  <div class="modal">
+    <div class="modalBox">
+    </div>
+  </div>
 
-    {%- include views/banner.html -%}
+  {%- include views/header.html -%}
 
-    {%- include extensions/hashlocate.html -%}
+  {%- include views/banner.html -%}
 
-    {%- include extensions/theme-toggle.html -%}
+  {%- include extensions/hashlocate.html -%}
 
-    {%- include extensions/click-to-top.html -%}
+  {%- include extensions/theme-toggle.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+  {%- include extensions/click-to-top.html -%}
 
-    {%- include views/footer.html -%}
 
-  </body>
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+
+  {%- include views/footer.html -%}
+
+</body>
+
 </html>
