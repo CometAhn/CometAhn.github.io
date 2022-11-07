@@ -230,6 +230,7 @@
   */
  .wrapper {
    max-width: $content-width;
+   width: calc(100% - 310px);
    /*margin: auto;*/
    padding-right: $spacing-unit;
    padding-left: $spacing-unit;
