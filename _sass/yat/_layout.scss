@@ -270,6 +270,8 @@
  * Page content
  */
 .page-content {
+  position: relative;
+  display: flex;
   @extend %flex-1; /* <-- Keep footer on the bottom */
   -ms-flex: none; /* <-- Fix IE footer issue */
   padding: $spacing-unit * 2 0;
@@ -397,7 +399,7 @@
       padding: 0 15px;
     }
 */
-    .active {
+    .active{
       padding : 0 3px;
       margin: 0 2px;
     }
