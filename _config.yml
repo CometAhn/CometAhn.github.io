@@ -28,21 +28,13 @@ title: Comet's Blog
 email: comet@ipi.pw
 author: CometAhn
 
+name: Comet
+p_description: 개발자를 꿈꾸는 취준생입니다.
+
 # comet : sidebar
-avatar: /img/avatar.jpeg
+avatar: /img/hello.jpg
 cover_image: /img/bg.jpeg
 
-# Optimize Jekyl SEO Tag
-twitter:
-  username: vszhub
-  card: summary
-logo: logo.png
-social:
-  name: Songzi Vong
-  links:
-    - https://twitter.com/vszhub
-    - https://github.com/vszhub
-    
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
 # * current year: {currentYear}
@@ -147,7 +139,7 @@ sitemap: true
 # it will be always kept on every visit (i.e. no matter
 # the browser is closed or not)
 #
-night_mode: "on/off"
+night_mode: "off"
 
 # Code badge setting
 # You can enable or disable the code badge and so on

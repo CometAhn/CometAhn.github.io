@@ -76,6 +76,9 @@
     .framework .sidebar {
       top: 20px;
     }
+    .sidebar-left {
+      top: 20px;    
+    }
   }
 }
 
@@ -270,12 +273,12 @@
  * Page content
  */
 .page-content {
-  position: relative;
   display: flex;
   @extend %flex-1; /* <-- Keep footer on the bottom */
   -ms-flex: none; /* <-- Fix IE footer issue */
   padding: $spacing-unit * 2 0;
   padding-top: 72px;
+  height: 100%;
 }
 
 .page-heading {

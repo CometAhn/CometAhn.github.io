@@ -25,16 +25,8 @@
   {%- include extensions/click-to-top.html -%}
 
   <!-- comet : sidebar -->
-
-  {%- assign cover_image = site.cover_image -%}
-  {%- if page.cover_image -%}
-  {%- assign cover_image = page.cover_image -%}
-  {%- endif -%}
-
-
   <main class="page-content" aria-label="Content">
-    <div class="sidebar-left"
-      style="background-color: {{ cover_bg_color }}; color: {{ cover_color}}; {% if cover_image %}background-image: url({{ cover_image | relative_url }});{% endif %}">
+    <div class="sidebar-left">
       {%- include sidebar-left.html -%}
     </div>
     <div class="wrapper">

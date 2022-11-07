@@ -10,10 +10,10 @@
     </div>
   {%- endif %}
   <div class="masthead-title">
-    <a href="{{ "/" | relative_url }}" title="Home">{{ site.title }}</a>
+    <a href="{{ "/" | relative_url }}" title="Home">{{ site.name }}</a>
   </div>
   <div class="masthead-tagline">
-    <small>{{ site.description }}</small>
+    <small>{{ site.p_description }}</small>
   </div>
   {%- if site.data.navigation -%}
   <nav class="navigation">
@@ -27,8 +27,8 @@
   </nav>
   {%- endif -%}
   {% if site.data.social -%}
-    <div class="social pure-menu pure-menu-horizontal">
-      <ul class="social-icons pure-menu-list">
+    <div class="social">
+      <ul class="social-icons">
       {% for social in site.data.social -%}
         <li class="pure-menu-item">
           <a class="social-icon pure-menu-link" href="{{ social.url }}">

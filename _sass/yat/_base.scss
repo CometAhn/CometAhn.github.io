@@ -230,7 +230,7 @@
   */
  .wrapper {
    max-width: $content-width;
-   width: calc(100% - 310px);
+ width: calc(100% - 310px);
    /*margin: auto;*/
    padding-right: $spacing-unit;
    padding-left: $spacing-unit;
@@ -421,17 +421,19 @@
  
  
  /* comet : sidebar start */
- 
- .include_content{
-   position: relative;
- }
- 
  .sidebar-left {
+   position: sticky;
    text-align: center;
    background: center / cover;
-   height: 100vh;
-   max-width: 18%;
+   width: 20%;
    color : #333333;
+   transition: top 0.2s, display 0.2s;
+ 
+   @include flex-sticky($header-height + 20px);
+ 
+   @include media-query($on-laptop) {
+     display: none;
+   }
  }
  
  .masthead {
@@ -446,12 +448,13 @@
  }
  
  .avatar-image {
-   width: 50%;
-   height: auto;
+   width: 150px;
+   height: 150px;
    border-radius: 50%;
    display: block;
    margin-right: auto;
-   margin-left: auto
+   margin-left: auto;
+   object-fit: cover;
  }
  
  .masthead-title {
@@ -463,7 +466,7 @@
  
  .masthead-title a:hover,
  .masthead-title a:focus {
-   color: var(--link-hover-color)
+   color: #1c7ed6;
  }
  
  .masthead-tagline {
@@ -475,14 +478,14 @@
  }
  
  .navigation-list {
-   margin-top: var(--spacer-2);
+   margin-top: 1rem*1.5;
    padding: 0;
    list-style: none
  }
  
  .navigation-item {
    display: block;
-   margin-bottom: var(--spacer)
+   margin-bottom: 1rem;
  }
  
  .navigation-item a {
@@ -491,29 +494,35 @@
    letter-spacing: 0.05em;
    font-size: 90%;
    border-bottom: 2px solid;
-   border-color: inherit
+   border-color: inherit;
  }
  
  .navigation-item a:hover,
  .navigation-item a:focus {
-   color: var(--link-hover-color)
+   color: #1c7ed6;
  }
  
  .social {
-   margin-top: var(--spacer-2);
+   margin-top: 1rem*1.5;
    font-size: 150%;
    white-space: normal;
-   line-height: .5
+   line-height: .5;
  }
  
- .social-icon {
-   padding: var(--spacer)
+ .social-icon{
+   padding: 1rem;
  }
  
+ .social-icons{
+   list-style: none;
+   display: flex;
+   justify-content: center;
+ 
+ }
  .social-icon:hover,
  .social-icon:focus {
-   color: var(--link-hover-color);
-   background-color: transparent
+   color: #1c7ed6;
+   background-color: transparent;
  }
  
  @media (max-width: 1460px) {
