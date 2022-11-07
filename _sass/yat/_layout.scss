@@ -1,7 +1,7 @@
 /**
  * Animation for transparent header
  */
- html {
+html {
   &[data-header-transparent] {
     header.site-header {
       position: fixed;
@@ -17,69 +17,73 @@
       height: 0;
       margin-top: 12px;
       background-color: transparent;
-      transition: 0.1s height,background-color,box-shadow;
+      transition: 0.1s height, background-color, box-shadow;
 
       &.site-header {
-        .site-brand-inner, .page-link,  {
-          color: #fff;
-          transition: 0.1s color;
+
+        .site-brand-inner,
+        .page-link,
+        {
+        color: #fff;
+        transition: 0.1s color;
+      }
+
+      .site-favicon {
+        filter: opacity(0.5) drop-shadow(0 0 0 white);
+      }
+
+      /* comet : add search */
+      #tipue_search_input {
+        color: white;
+        max-width: 100px;
+        padding: 3px;
+        margin: 0 20px 0 0;
+        border: 1px solid #e3e3e3;
+        border-radius: 0;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        box-shadow: none;
+        outline: 0;
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      @include media-query($on-laptop) {
+        .page-link {
+          color: $header-text-color;
         }
 
-        .site-favicon {
-          filter: opacity(0.5) drop-shadow(0 0 0 white);
-        }
-
-        /* comet : add search */
-        #tipue_search_input {
-          color: white;
-          max-width: 100px;
-          padding: 3px;
-          margin: 0 20px 0 0;
-          border: 1px solid #e3e3e3;
-          border-radius: 0;
-          -moz-appearance: none;
-          -webkit-appearance: none;
-          box-shadow: none;
-          outline: 0;
-          background-color: rgba(255, 255, 255, 0.3);
-        }
-
-        @include media-query($on-laptop) {
-          .page-link {
-            color: $header-text-color;
-          }
-
-          .menu-icon {
-            > svg {
-              fill: $white-color;
-            }
+        .menu-icon {
+          >svg {
+            fill: $white-color;
           }
         }
       }
     }
-
-    footer.site-footer {
-      color: unset;
-      background-color: transparent;
-
-      .site-footer-inner {
-        border-top: solid 1px #eee;
-      }
-    }
   }
 
-  &[data-scroll-status='down'] {
-    header.site-header {
-      top: -$header-height;
-    }
+  footer.site-footer {
+    color: unset;
+    background-color: transparent;
 
-    .framework .sidebar {
-      top: 20px;
-    }
-    .sidebar-left {
-      top: 20px;    
+    .site-footer-inner {
+      border-top: solid 1px #eee;
     }
   }
+}
+
+&[data-scroll-status='down'] {
+  header.site-header {
+    top: -$header-height;
+  }
+
+  .framework .sidebar {
+    top: 20px;
+  }
+
+  .sidebar-left {
+    top: 20px;
+  }
+}
 }
 
 /**
@@ -96,7 +100,7 @@
   @include flex-sticky(0);
   z-index: 1000;
 
-  & > .wrapper {
+  &>.wrapper {
     margin: 0 60px;
     padding: 0;
     max-width: 100%;
@@ -127,7 +131,8 @@
     letter-spacing: -1px;
     transition: 0.1s filter color;
 
-    &, &:visited {
+    &,
+    &:visited {
       color: $header-text-color;
     }
 
@@ -162,6 +167,7 @@
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 24px;
+
       &:hover {
         text-decoration: underline;
       }
@@ -184,20 +190,20 @@
       float: right;
       text-align: center;
 
-      > svg {
+      >svg {
         fill: rgba($header-text-color, 80%);
         transition: 0.1s fill;
       }
     }
 
-    input ~ .trigger {
+    input~.trigger {
       clear: both;
       display: none;
       border-radius: 3px;
       box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .06);
     }
 
-    input:checked ~ .trigger {
+    input:checked~.trigger {
       display: block;
       background: $header-background-color;
     }
@@ -274,8 +280,10 @@
  */
 .page-content {
   display: flex;
-  @extend %flex-1; /* <-- Keep footer on the bottom */
-  -ms-flex: none; /* <-- Fix IE footer issue */
+  @extend %flex-1;
+  /* <-- Keep footer on the bottom */
+  -ms-flex: none;
+  /* <-- Fix IE footer issue */
   padding: $spacing-unit * 2 0;
   padding-top: 72px;
   height: 100%;
@@ -297,7 +305,7 @@
     margin-left: 0;
     list-style: none;
 
-    > li {
+    >li {
       margin-bottom: $spacing-unit * 1.5;
       padding-bottom: 30px;
 
@@ -372,7 +380,7 @@
   .paginator {
     text-align: center;
 
-    & > .previous:before {
+    &>.previous:before {
       content: ' ';
       border: solid #787878;
       border-width: 0 2px 2px 0;
@@ -383,7 +391,7 @@
       -webkit-transform: rotate(135deg);
     }
 
-    & > .next:after {
+    &>.next:after {
       content: ' ';
       border: solid #787878;
       border-width: 0 2px 2px 0;
@@ -394,16 +402,18 @@
       -webkit-transform: rotate(-45deg);
     }
 
-    .previous span, .next span {
+    .previous span,
+    .next span {
       color: #b3b3b3;
     }
-/*
+
+    /*
     .indicator {
       padding: 0 15px;
     }
 */
-    .active{
-      padding : 0 3px;
+    .active {
+      padding: 0 3px;
       margin: 0 2px;
     }
   }
@@ -464,20 +474,29 @@
       }
     }
 
-    img, svg, iframe {
+    img,
+    svg,
+    iframe {
       margin-left: auto;
       margin-right: auto;
     }
 
-    img:not(.emoji), svg, iframe {
+    img:not(.emoji),
+    svg,
+    iframe {
       display: block;
     }
 
-    h2, h3, h4, h5, h6 {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       margin: 60px 0 19px;
     }
 
-    p, hr {
+    p,
+    hr {
       margin-bottom: 24px;
     }
 
@@ -497,6 +516,7 @@
 
     ul {
       margin-left: 15px;
+
       .post-link {
         @include relative-font-size(1.075);
       }
@@ -589,6 +609,7 @@
     &:not(:first-child) {
       margin-top: 18px;
     }
+
     margin-bottom: 8px;
   }
 
@@ -615,17 +636,17 @@
     height: 100%;
     overflow: hidden;
 
-    & > *:first-child {
+    &>*:first-child {
       @include center-image;
       transition: 0.1s all ease-in-out;
     }
 
-    & > video {
+    &>video {
       width: 100vw;
       object-fit: cover;
     }
 
-    & > img.img-placeholder {
+    &>img.img-placeholder {
       display: none;
     }
   }
@@ -641,7 +662,7 @@
     padding: 10px 5px;
     text-shadow: 1px 1px 2px #33333355;
 
-    & > *:first-child {
+    &>*:first-child {
       margin: 0;
 
       > :nth-child(1) {
@@ -721,7 +742,7 @@
  * Layout and sidebar
  */
 .framework {
-    @extend %flex;
+  @extend %flex;
 
   .main {
     @extend %flex-1;
