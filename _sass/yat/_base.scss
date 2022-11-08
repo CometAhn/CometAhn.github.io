@@ -553,6 +553,7 @@ p img:hover {
     width: auto;
   }
 }
+
 /* comet : sidebar end */
 
 /* comet : prograssbar start */
@@ -579,4 +580,9 @@ html[data-scroll-status='down'] .progress-container,
 .progress-bar {
   @include flex-sticky(0);
 }
+
+html[data-scroll-status='top'] .progress-container {
+  display: none;
+}
+
 /* comet : prograssbar end */
