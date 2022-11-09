@@ -561,10 +561,6 @@
      max-width: 82vw;
    }
  
-   pre.badge::before {
-     z-index: 999;
- 
-   }
  
    .sidebar-left {
      display: none;
@@ -610,3 +606,9 @@
  }
  
  /* comet : prograssbar end */
+ 
+ /* 배지 배치 오류 */
+ /* 로딩보단 뒤로, 그 외 보단 앞으로 배치한다. */
+ pre.badge::before {
+   z-index: 98;
+ }
