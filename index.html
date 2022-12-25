@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang=" ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Home | Comet’s Blog</title>
+<meta name="generator" content="Jekyll v4.3.1">
+<meta property="og:title" content="Home">
+<meta name="author" content="CometAhn">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="공부 정리용 블로그입니다.">
+<meta property="og:description" content="공부 정리용 블로그입니다.">
+<link rel="canonical" href="https://cometahn.github.io/jekyll-theme-yat/">
+<meta property="og:url" content="https://cometahn.github.io/jekyll-theme-yat/">
+<meta property="og:site_name" content="Comet’s Blog">
+<meta property="og:type" content="website">
+<link rel="next" href="https://cometahn.github.io/jekyll-theme-yat/page2">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Home">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"CometAhn"},"description":"공부 정리용 블로그입니다.","headline":"Home","name":"Comet’s Blog","url":"https://cometahn.github.io/jekyll-theme-yat/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="/comet.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/jekyll-theme-yat/assets/css/main.css">
+  <script src="/jekyll-theme-yat/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://cometahn.github.io/jekyll-theme-yat/feed.xml" title="Comet's Blog">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HJC26EDXPQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HJC26EDXPQ');
+</script><link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.6.0/styles/github-dark-dimmed.min.css">
+<script src="https://unpkg.com/@highlightjs/cdn-assets@11.6.0/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script src="https://unpkg.com/@highlightjs/cdn-assets@11.6.0/languages/go.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+   <!-- load() -->
+   <script>hljs.initHighlightingOnLoad();</script>
+   <script>hljs.initLineNumbersOnLoad();</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+var els = document.querySelectorAll('pre code')
+
+function addLangData(block) {
+  var outer = block.parentElement.parentElement.parentElement;
+  var lang = block.getAttribute('data-lang');
+  for (var i = 0; i < outer.classList.length; i++) {
+    var cls = outer.classList[i];
+    if (cls.startsWith('language-')) {
+      lang = cls;
+      break;
+    }
+  }
+  if (!lang) {
+    cls = block.getAttribute('class');
+    lang = cls ? cls.replace('hljs ', '') : '';
+  }
+  if (lang.startsWith('language-')) {
+    lang = lang.substr(9);
+  }
+  block.setAttribute('class', 'hljs ' + lang);
+  block.parentNode.setAttribute('data-lang', lang);
+}
+
+function addBadge(block) {
+  var enabled = ('true' || 'true').toLowerCase();
+  if (enabled == 'true') {
+    var pre = block.parentElement;
+    pre.classList.add('badge');
+  }
+}
+
+function handle(block) {
+  addLangData(block);
+  addBadge(block)
+  hljs.highlightBlock(block);
+}
+
+for (var i = 0; i < els.length; i++) {
+  var el = els[i];
+  handle(el);
+}
+});
+</script>
+
+<style>
+/* code language badge */
+pre.badge::before {
+  content: attr(data-lang);
+  color: #fff;
+  background-color: #ff4e00;
+  padding: 0 .5em;
+  border-radius: 0 2px;
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 32px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+/* fix wrong badge display for firefox browser */
+code > table pre::before {
+  display: none;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="/assets/js/loading.js"></script>
+  <script src="/assets/js/prograss.js"></script>
+  <!-- comet : add search-->
+  <link rel="stylesheet" href="/assets/tipuesearch/css/tipuesearch.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/assets/tipuesearch/tipuesearch_content.js"></script>
+  <script src="/assets/tipuesearch/tipuesearch_set.js"></script>
+  <script src="/assets/tipuesearch/tipuesearch.min.js"></script>
+  <script src="/assets/js/magnific-popup-setting.js"></script>
+  <meta property="og:image" content="http://comet.today/img/hello.jpg">
+  <script src="https://kit.fontawesome.com/7d9cf825f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="indicator"></div>
+  </div>
+
+  <div id="loading">
+    <img id="loading-image" src="/img/loading.gif" alt="Loading...">
+  </div>
+
+  <div class="modal">
+    <div class="modalBox">
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header site-header-transparent" role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/jekyll-theme-yat/">
+  <img class="site-favicon" title="Comet's Blog" src="/comet.ico" onerror="this.style.display='none'">
+  Comet's Blog
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+            <!-- comet : add search -->
+            <form action="/search">
+<a class="page-link" href="/jekyll-theme-yat/about.html">ABOUT</a><a class="page-link" href="/jekyll-theme-yat/archives.html">ARCHIVES</a><a class="page-link" href="/jekyll-theme-yat/categories.html">CATEGORIES</a><a class="page-link" href="/jekyll-theme-yat/">HOME</a><a class="page-link" href="/jekyll-theme-yat/tags.html">TAGS</a><img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
+              <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" class="Search_btn" required>
+
+
+
+
+
+
+
+
+
+<span class="page-link">
+
+
+
+<div id="google_translate_element" style="display: none;">
+</div>
+
+<span class="ct-language">
+  <ul class="list-unstyled ct-language-dropdown">
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="en">
+          
+          <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" title="English">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="fr">
+          
+          <img src="https://cdn.countryflags.com/thumbs/france/flag-400.png" title="French">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="zh-CN">
+          
+          <img src="https://cdn.countryflags.com/thumbs/china/flag-400.png" title="Chinese(Simple)">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ja">
+          
+          <img src="https://cdn.countryflags.com/thumbs/japan/flag-400.png" title="Japanese">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ko">
+          
+          <img src="https://cdn.countryflags.com/thumbs/south-korea/flag-400.png" title="Korean">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ru">
+          
+          <img src="https://cdn.countryflags.com/thumbs/russia/flag-400.png" title="Russian">
+          
+        </a>
+      </li>
+    
+  </ul>
+</span>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    autoDisplay: false,
+    layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  }, 'google_translate_element');
+
+  // Links to cross-origin destinations are unsafe
+  var gll = document.getElementsByClassName('goog-logo-link')[0];
+  if (gll) {
+    gll.setAttribute('rel', 'noopener');
+  }
+
+  function restoreLang() {
+    var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
+    if (!iframe) return;
+
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var restore_el = innerDoc.getElementsByTagName("button");
+
+    for (var i = 0; i < restore_el.length; i++) {
+      if (restore_el[i].id.indexOf("restore") >= 0) {
+        restore_el[i].click();
+        var close_el = innerDoc.getElementsByClassName("goog-close-link");
+        close_el[0].click();
+        return;
+      }
+    }
+  }
+
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+  }
+
+  var googleCombo = document.querySelector("select.goog-te-combo");
+  var langSelect = document.querySelector('.ct-language');
+  langSelect.addEventListener('click', function(event) {
+    if (!event.target) {
+      return;
+    }
+
+    var selected = document.querySelector('.ct-language .ct-language-selected');
+    if (selected) {
+      selected.classList.remove('ct-language-selected');
+    }
+
+    var target = event.target;
+    while (target && target !== langSelect ) {
+      if (target.matches('.lang-select')) {
+        break;
+      }
+      target = target.parentElement;
+    }
+
+    if (target && target.matches('.lang-select')) {
+      var lang = target.getAttribute('data-lang');
+      if (googleCombo.value == lang) {
+        restoreLang();
+      } else {
+        target.parentElement.classList.add('ct-language-selected');
+        googleCombo.value = lang;
+        triggerHtmlEvent(googleCombo, 'change');
+      }
+    }
+
+    event.preventDefault();
+  });
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</span>
+</form>
+          </div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;documentElement.setAttribute("data-header-transparent", "");var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="page-banner">
+    <div class="page-banner-img">
+<div style="background-image: url(/jekyll-theme-yat/assets/images/banners/home.jpeg)"></div>
+        <img class="img-placeholder" src="/jekyll-theme-yat/assets/images/banners/home.jpeg">
+</div>
+    <div class="wrapper">
+      <div class="page-banner-inner"><div class="page-banner-default">
+            <h1 class="page-banner-heading">
+              코딩 공부 정리
+            </h1>
+            <h2 class="page-banner-subheading">
+              코딩 공부 정리 블로그입니다.
+            </h2>
+          </div></div>
+    </div>
+  </section><script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('off' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<!-- comet : sidebar -->
+  <main class="page-content" aria-label="Content">
+    <div class="sidebar-left">
+<header class="masthead">
+  <div class="avatar">
+<img src="/jekyll-theme-yat/img/hello.jpg" class="avatar-image" alt="">
+    </div>
+  <div class="masthead-title">
+    <a href="/jekyll-theme-yat/" title="Home">Comet</a>
+  </div>
+  <div class="masthead-tagline">
+    <small>공부하고자 하는 신입 개발자입니다.</small>
+  </div>
+<nav class="navigation">
+    <ul class="navigation-list">
+<li class="navigation-item">
+        <a onclick="sessionStorage.setItem('forceCheckScroll', 'true')" href="/jekyll-theme-yat/">Blog</a>
+      </li>
+<li class="navigation-item">
+        <a onclick="sessionStorage.setItem('forceCheckScroll', 'true')" href="/jekyll-theme-yat/about.html">About</a>
+      </li>
+</ul>
+  </nav><div class="social">
+      <ul class="social-icons">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto://comet@ipi.pw">
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li>
+<li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="https://ipi.pw/">
+            <i class="fa-solid fa-globe" title="WebPage"></i>
+          </a>
+        </li>
+<li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="https://github.com/CometAhn/">
+            <i class="fab fa-github" title="GitHub"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+</div>
+    <div class="wrapper">
+      <div class="framework">
+  <section class="main">
+
+     <div class="articles">
+  
+
+  
+
+
+  <div class="pagination">
+  <!-- Post list links -->
+  <ul class="post-list">
+<li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/javascript/2022/12/25/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EC%9A%94.html">
+          [JavaScript] 자바스크립트 기본 개요
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> 2022-12-25</span>
+        <!-- <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 3 mins</span> -->
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/javascript/2022/12/25/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EC%9A%94.html">
+        <p>
+        자바스크립트 기본 개요
+
+자바스크립트는 웹 브라우저에서 동작하는 스크립트 언어이다. 하지만 처음부터 그렇게 웹 개발자에게 친숙한 언어는 아니었다.
+
+초창기 자바스크립트는 웹 페이지 제작에 있어서 보조적인 기능을 수행하기 위한 용도로써 사용했다.
+
+대부분의 로직은 주로 웹 서버에서 실행되었고, 클라이언트인 웹 브라우저에서는 서버로부터 받은 HTML과 CSS, 데이터로 렌더링을 해주는 수준이었다. 이 시절에 자바스크립트는 그다지 중요한 역할을 담당하지 못했다. 다만 소수의 자바스크립트 프로그래머들에 의해 여러 가지 연구가 이루어지고, protoyupe.js와 같은 주요 라이브러리들이 개발된다.
+
+그리고 웹이 더욱 발전... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#javascript">#javascript</a></div>
+    </li>
+<li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/nexacro/2022/12/25/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%85%8B-row-%EC%B6%94%EA%B0%80.html">
+          [nexacro] 데이터셋 row 추가
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> 2022-12-25</span>
+        <!-- <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span> -->
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/nexacro/2022/12/25/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%85%8B-row-%EC%B6%94%EA%B0%80.html">
+        <p>
+        Design
+
+콤보박스 cboNumber, CboAlpha 생성.
+
+데이터셋 dsNumber, dsAlpha 생성.
+
+  각각의 데이터셋에 0번째 컬럼 생성.
+
+
+각각의 콤보박스에 데이터셋 매핑.
+
+Script
+
+this.jsPR_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{	
+	
+	// 1 ~ 99 데이터가 있는 데이터셋 생성
+	for(var i = 0; i&lt;99;i++){
+		//i번째 row 생성
+		this.dsNumber.addRow(i);
+		//i번째째 로우, 0번째 컬럼에 i+1 입력.
+		this.dsNumber.setColumn... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#nexacro">#nexacro</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#javascript">#javascript</a>
+</div>
+    </li>
+<li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/portfolio/2022/11/22/ajax%EB%A1%9C-%EC%95%84%EC%9D%B4%EB%94%94-%EC%A4%91%EB%B3%B5-%EA%B2%80%EC%82%AC%ED%95%98%EA%B8%B0.html">
+          [portfolio] ajax로 아이디 중복 검사하기
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> 2022-11-22</span>
+        <!-- <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 4 mins</span> -->
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/portfolio/2022/11/22/ajax%EB%A1%9C-%EC%95%84%EC%9D%B4%EB%94%94-%EC%A4%91%EB%B3%B5-%EA%B2%80%EC%82%AC%ED%95%98%EA%B8%B0.html">
+        <p>
+        1. Ajax란?
+
+Ajax(Asynchronous JavaScript and Xml)은 빠르게 동작하는 동적인 웹 페이지를 만들기 위한 개발 기법이다.
+
+Ajax는 웹 페이지 전체를 다시 리로딩하지 않고도, 웹 페이지의 일부분만을 갱신할 수 있고, 백그라운드 영역에서 서버와 통신하여, 그 결과를 웹 페이지의 일부분에만 표시할 수 있다.
+
+이 때 서버와 여러 데이터를 주고 받을 수 있다.
+
+데이터는 JSON, XML(deault), HTMl, Text 등의 방법으로 전송된다.
+
+2. Ajax의 장단점
+
+장점
+
+  
+    웹 페이지 전체를 다시 로딩하지 않고도, 웹 페이지의 일부분만을 갱신할 수 있다.
+  
+  
+... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Lib%20Project">#Lib Project</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#portfolio">#portfolio</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#ajax">#ajax</a>
+</div>
+    </li>
+<li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/blog/2022/10/29/%EB%8C%93%EA%B8%80-%ED%85%8C%EC%8A%A4%ED%8A%B8.html">
+          [blog] 댓글 테스트
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> 2022-10-29</span>
+        <!-- <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span> -->
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/blog/2022/10/29/%EB%8C%93%EA%B8%80-%ED%85%8C%EC%8A%A4%ED%8A%B8.html">
+        <p>
+        댓글 테스트 포스트입니다.
+
+참고 글 : https://ansohxxn.github.io/blog/utterances/
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#blog">#blog</a></div>
+    </li>
+<li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/blog/2022/10/28/%EC%BD%94%EB%93%9C%EB%B8%94%EB%A1%9D-%ED%85%8C%EB%A7%88,-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%83%89,-%EB%A1%9C%EB%94%A9-%ED%99%94%EB%A9%B4-%EC%B6%94%EA%B0%80.html">
+          [blog] 코드블록 테마, 라인 넘버링, 스크롤 색, 로딩 화면 추가
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> 2022-10-28</span>
+        <!-- <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 2 mins</span> -->
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/blog/2022/10/28/%EC%BD%94%EB%93%9C%EB%B8%94%EB%A1%9D-%ED%85%8C%EB%A7%88,-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%83%89,-%EB%A1%9C%EB%94%A9-%ED%99%94%EB%A9%B4-%EC%B6%94%EA%B0%80.html">
+        <p>
+        현재 사용중인 깃 볼르그의 테마에 몇가지 문제점이 있습니다.
+
+
+  { highlight java linenos }로 코드 넘버 사용 시에만 라인 넘버링 보임.
+  { highlight java linenos }는 ‘```‘와는 달리 사용 시 들여쓰기 안 먹음.
+  코드 블록 테마가 맘에 안듦.
+
+
+이런 문제를 해결하기 위해 하이라이트는 이제 그만 사용하고, ‘```’ 사용 시 라인 넘버링 보이도록 수정 및 코드 블록 테마 변경하고 그 외에 스크롤 색 변경과, 로딩화면 추가 하겠습니다.
+
+코드블록 테마
+
+공식 사이트 : https://highlightjs.org
+
+데모 사이트 : https://highlightjs... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#blog">#blog</a></div>
+    </li>
+</ul>
+
+  <!-- Pagination links -->
+    
+
+  <div class="paginator">
+    <span class="previous">
+    
+      <span>Prev</span>
+    
+    </span>
+
+    <!-- comet : page numering -->
+    <span class="indicator">
+      
+      <span class="active">1</span>
+      
+      
+        
+        <a href="/page2">2</a>
+        
+      
+        
+        <a href="/page3">3</a>
+        
+      
+        
+        <a href="/page4">4</a>
+        
+      
+    </span>
+
+    <span class="next">
+    
+      <a href="/jekyll-theme-yat/page2">Next</a>
+    
+    </span>
+  </div>
+
+</div>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="common-list">
+  <ul>
+    <li>
+      <a href="/jekyll-theme-yat/index.html">
+        All<span>16</span>
+      </a>
+    </li>
+
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-JAVA">
+          JAVA <span>7</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-JavaScript">
+          JavaScript <span>1</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-Markdown">
+          Markdown <span>1</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-blog">
+          blog <span>2</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-nexacro">
+          nexacro <span>1</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-portfolio">
+          portfolio <span>3</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-test">
+          test <span>1</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+</section>
+</div>
+
+    </div>
+  </main><footer class="site-footer h-card">
+  <data class="u-url" href="/jekyll-theme-yat/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>Comet's Blog <span class="copyleft">©</span> 2022-2022 CometAhn</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <!-- <div class="footer-col rss-subscribe">Subscribe <a href="/jekyll-theme-yat/feed.xml">via RSS</a></div> -->
+      <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fcomet.today%2Fhit-counter&count_bg=%2395C8BF&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false">
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
